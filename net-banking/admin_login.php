@@ -1,14 +1,15 @@
 <?php
-    include "header.php";
+include "header.php";
 
-    if (isset($_GET['loginFailed'])) {
-        $message = "Invalid Credentials ! Please try again.";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-    }
+if (isset($_GET['loginFailed'])) {
+    $message = "Invalid Credentials ! Please try again.";
+    echo "<script type='text/javascript'>alert('$message');</script>";
+}
 ?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="admin_login_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,4 +46,5 @@
     </form>
 
 </body>
+
 </html>
